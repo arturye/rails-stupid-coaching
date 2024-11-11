@@ -1,3 +1,25 @@
-<h1>Coach's Answer</h1>
-<p>Your question: <%= @question %></p>
-<p>Coach says: <%= @awnser %></p>
+<div class="container my-5">
+  <div class="text-center">
+    <h1 class="display-4 mb-4">Stupid Coaching</h1>
+  </div>
+
+  <div class="card shadow-sm mb-3">
+    <div class="card-body">
+      <p class="card-text p-2">
+        <strong>You:</strong> <%= @question %>
+      </p>
+    </div>
+  </div>
+
+  <div class="card shadow-sm mb-4">
+    <div class="card-body bg-warning">
+      <p class="card-text p-2">
+        <strong>Your Coach:</strong> <%= @awnser %>
+      </p>
+    </div>
+  </div>
+
+  <div class="text-center">
+    <%= link_to "Ask a new Question", ask_path, class: "btn btn-primary" %>
+  </div>
+</div>
